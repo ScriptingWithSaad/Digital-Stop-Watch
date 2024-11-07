@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #1a1a1a;
+    font-family: 'Courier Prime', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.stop-watch {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#displayTime {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin: 1rem 0 2rem 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn i {
+    font-size: 1.5rem;
+}
+
+.btn-pause {
+    background: #e74c3c;
+}
+
+.btn-play {
+    background: #2ecc71;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-play i {
+    font-size: 1.8rem;
+}
+
+.btn-reset {
+    background: #f1c40f;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #displayTime {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn-play {
+        width: 60px;
+        height: 60px;
+    }
+}

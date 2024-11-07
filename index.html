@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch |ScriptingWithSaads</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Stop Watch</h1>
+    <div class="stop-watch">
+        <h2 id="displayTime">00:00:00</h2>
+        <div class="buttons">
+            <button class="btn btn-pause" onclick="watchStop()" title="Pause">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="btn btn-play" onclick="watchStart()" title="Start">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="btn btn-reset" onclick="watchReset()" title="Reset">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
